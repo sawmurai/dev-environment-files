@@ -71,6 +71,18 @@ typescript.setup({
 })
 
 -- configure css server
+lspconfig["volar"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure css server
+lspconfig["rust_analyzer"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure css server
 lspconfig["cssls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
